@@ -1,0 +1,219 @@
+//To print 2D element (3/3) 
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+        {  
+              printf("%d",x[i][j]);
+        } printf("\n");
+        }
+          return 0;
+}
+
+
+// To print sum of all rows in 2D array 
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     } 
+     for(i=0;i<3;i++)
+     {
+         for(j=0;j<3;j++)
+        { sum+=x[i][j];
+     
+     }
+        printf("%d\n",sum);
+        sum=0;
+        }  return 0;
+}
+
+
+
+// To print the sum of all colums in 2D array
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     } 
+     for(i=0;i<3;i++)
+     {
+         for(j=0;j<3;j++)
+        { sum+=x[j][i];
+     
+     }
+        printf("%d\n",sum);
+        sum=0;
+        }  return 0;
+}
+
+
+
+// To print sum of daigonals in (3/3) matrix
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+     for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+        if(i==j)
+        {
+            sum+=x[i][j];
+        }
+    }
+}
+printf("%d",sum);
+return 0;
+}
+
+
+
+// To print the sum of anti-daigonal in (3/3) matrix
+
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+     for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+        if(i+j==2)
+        {
+            sum+=x[i][j];
+        }
+    }
+}
+printf("%d",sum);
+return 0;
+}
+
+// To print the transpose in (3/3) matrix
+
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+        {  
+              printf("%d",x[j][i]);
+        } printf("\n");
+        }
+          return 0;
+}
+
+
+// To print upper-half (3/3) matrix
+
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+        {
+            if(i+j<=2)
+              printf("%d",x[i][j]);
+        } printf("\n");
+        }
+          return 0;
+}
+
+
+
+// To print the lower-half of (3/3) matrix
+
+#include<stdio.h>
+int main()
+{  
+    int x[3][3],i,j,sum=0;
+    for(i=0;i<3;i++)
+     { 
+         for(j=0;j<3;j++)
+          {
+              scanf("%d",&x[i][j]);
+              
+          }
+     }  
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+        {  
+            
+            if(i+j>=2)
+            {
+              printf("%d",x[i][j]);
+            } 
+            else
+        {    printf(" ");
+            
+        }
+        } 
+        printf("\n");
+        }
+          return 0;
+}
+
+
